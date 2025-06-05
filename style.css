@@ -83,8 +83,6 @@ body {
 
 
 
-
-
 /* Hero Section */
 /* .hero {
   background: #3d3939;
@@ -233,7 +231,8 @@ body {
 }
 
 /* Contact Section */
-.contact {
+
+/* .contact {
   background-color: #eeeeee;
   padding: 2rem;
   text-align: center;
@@ -246,7 +245,39 @@ body {
 
 .contact p {
   margin: 0.5rem 0;
+} */
+
+.contact {
+  background-color: #eeeeee;
+  padding: 2rem;
+  text-align: center;
 }
+
+.contact h3 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contact-card {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+.contact-card p {
+  margin: 0.3rem 0;
+}
+
 
 /* Responsive Design */
 /* Responsive Design */
@@ -776,3 +807,19 @@ body {
     white-space: nowrap;
   }
 }
+
+
+.designer-footer {
+  background-color: #f8f8f8;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.designer-footer p {
+  margin: 0.3rem 0;
+}
+
+
