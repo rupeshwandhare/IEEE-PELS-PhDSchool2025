@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhD Summer School 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style> html { scroll-behavior: smooth;} </style>
+</head>
+<body>
+
+  
+<button id="backToTop" title="Go to top">↑</button>
+
+  <!-- HEADER & NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+         <img src="img/iith_logo1.png" alt="IITH Logo" class="logo-circle">
+         <img src="img/PEEClogo.png" alt="PEEC Logo" class="logo-circle">
+        <!-- <span>PhD School 2025</span> -->
+      </div>
+
+    <!-- Menu icon for mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#about-wie">WIE</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#registration">Registration and Dates</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sponsor">Sponsors</a></li>
+        <li> </li>
+      </ul>
+    </nav>
+  </header>
+
+   
+
+  <!-- HERO SECTION -->
+   
+  <section class="hero">
+  
+    <div class="slideshow">
+    <div class="slide" style="background-image: url('img/PCB1.jpeg');"></div>
+    <div class="slide" style="background-image: url('img/PCB2.jpeg');"></div>
+    <div class="slide" style="background-image: url('img/PCB3.jpeg');"></div>
+    <div class="slide" style="background-image: url('img/PCB4.jpeg');"></div>
+    </div>
+  <div class="hero-overlay"></div>
+      
+    <div class="hero-content">
+      <div class="hero-logos">
+        <img src="img/IEEE_logo1.png" alt="IEEE Logo">
+         <img src="img/PELS-Logo3.png" alt="PELS Logo">
+         <img src="img/WIE_logo.png" alt="WIE Logo">
+        <!-- <span>PhD School 2025</span> -->
+      </div>
+      <p> <strong>IEEE Power Electronics Society sponsored</strong> </p>
+      <h1>PhD Summer School 2025</h1>
+      <!-- <h3>on</h3> -->
+      <h2>Designing Reliable Control Circuits for Power Converters</h2>
+      <h3>19 July – 23 July, 2025</h3>
+      <a href="brochure.pdf" download class="download-btn" target="_blank">Download Brochure (PDF)</a>
+
+      <!-- <div class="hero-content"> -->
+        <h2>Countdown to Workshop</h2>
+       <div id="timer" class="countdown-timer">Loading...</div>
+      <!-- </div> -->
+        
+    </div>
+        
+  </div>
+  </section>
+
+    <!-- <section id="countdown" class="section countdown-section">
+        <h2>Countdown to Workshop</h2>
+        <div id="timer" class="countdown-timer">Loading...</div>
+    </section> -->
+
+  <!-- MAIN CONTENT SECTIONS -->
+  <main>
+
+    <section id="about" class="section">
+      <h2>About PhD Summer School 2025</h2>
+      <p>The theme of this year’s school is “Designing reliable control 
+        circuits for power converters”, which is sponsored by IEEE Power 
+        Electronics Society (PELS). There will be a series of lectures by 
+        renowned speakers from  India and abroad, delivering knowledge on the 
+        hardware/software design of control circuits suitable for power 
+        converters. In addition, there will be Hands-On Sessions on the 
+        schematic, layout design, testing of modern driver circuits for power
+         devices, and establishing reliable feedback mechanisms (signal 
+         conditioning circuits) for power converters. A few sessions will be
+          spared for the selected PhD Scholars in their 3rd/4th year of PhD 
+          to present their research work for about 20 minutes, followed by 
+          a 10-minute Q&A. This will enable scholars to prepare for their 
+          upcoming research defence. At the end of the workshop, a few 
+          experimental kits will be awarded to deserving and outperforming 
+          participants (through evaluation). Certificates will be provided 
+          to all participants who successfully attend the Ph.D. Summer School. 
+
+      </p>
+
+      <h2>About IIT Hyderabad</h2>
+      <div class="about-images" id="aboutIIT">
+        <img src="img/IITH_campus.png" alt="aboutIIT">
+      </div>
+      <p>Indian Institute of Technology Hyderabad (IITH) is a premier institute of science and technology 
+        established in 2008. IITH has been consistently ranked in the top 10 institutes in India for 
+        Engineering according to NIRF making it one of the most coveted institutes for science and 
+        technology in the country. The very foundation of IIT Hyderabad is based on research and innovation. 
+        The vibrant research culture is evident from the number of patents, technologies and publications that IITH produces 
+        consistently every year.
+      </p>
+
+      <h2>About Department of Electrical Engineering, IITH </h2>
+      <div class="about-images" id="aboutEE">
+        <img src="img/EEdept_iith.jpg" alt="aboutEE">
+      </div>
+      <p>The Department of Electrical Engineering (EE) at IIT Hyderabad offers a vibrant environment for 
+        undergraduate, post graduate education and research in many areas of Electrical Engineering. 
+        We are a team of 38 faculty , 621 students (320 BTech, 145 MTech and 156 PhD) and 16 staff members
+         engaged in cutting edge research and teaching in several frontier areas of Electrical Engineering.
+      </p>
+
+      <h2>About PEEC Laboratory </h2>
+      <div class="about-images" id="aboutPEEC">
+        <img src="img/Lab_image.png" alt="aboutPEEC">
+      </div>
+      <p>The Power Electronics & Embedded Control (PEEC) Lab, led by Dr. Rupesh Wandhare, is dedicated 
+        to advanced research in power conversion and intelligent control systems. The lab focuses on both 
+        isolated and non-isolated DC-DC, DC-AC, and AC-DC power converters, catering to a broad spectrum 
+        of applications—from consumer electronics and household appliances to microgrids, renewable energy 
+        integration, and electric vehicle (EV) charging infrastructure. The lab hosts a vibrant research 
+        team comprising 7 Ph.D. scholars, 8 M.Tech. students, 4 B.Tech. students, and 1 Technical 
+        Assistant. Between 2019 and 2025, it has achieved 4 Patents, 40+ publications.
+
+        A few Pictures of technologies developed by PEEC
+        <div class="about-images" id="aboutHardware">
+        <img src="img/Intro_hardwares.png" alt="aboutWorks">
+        </div>
+      </p>
+
+    </section>
+
+    <section id="about-wie" class="section">
+      <h2>About WIE</h2>
+      <p>IEEE Women in Engineering (WIE) sponsored events on women empowerment 
+        in the engineering sector will be conducted during ‘PhD School 2025’. 
+        Special sessions for women participants will be conducted to disseminate
+         information on opportunities for women in power electronics and the 
+         various schemes undertaken by the Government of India for women 
+         scientists. Institute tour and visits to various power electronics 
+         laboratories in IIT Hyderabad will be arranged for WIE participants. 
+         Additional speaker (expert in the power electronics domain) will guide 
+         the WIE participants during IEEE PELS PhD School. Experimental kits 
+         will be awarded to deserving and outperforming WIE participants during 
+         research presentation event (through evaluation).
+    </p>
+    </section>
+
+    <section id="venue" class="section">
+    <h2>Venue</h2>
+    <p>The workshop will be held at the Department of Electrical Engineering, IIT Hyderabad.</p>
+
+    <div class="map-container">
+        <!-- Replace this embed src with your actual map location if needed -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4674.698103194299!2d78.12166837516972!3d17.595885183327212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf76428905779%3A0x1f660363e0beb20f!2sDepartment%20of%20Electrical%20Engineering%20and%20Computer%20Science%20Engineering!5e1!3m2!1sen!2sin!4v1748526515416!5m2!1sen!2sin" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    </section>
+
+
+    <section id="program" class="section">
+      <h2>Program</h2>
+      <p>To be updated soon.....</p>
+    </section>
+
+    <section id="instructors" class="section">
+
+    <h2>Instructors</h2>
+
+    <div class="instructors-grid">
+
+        <div class="instructor-card">
+        <img src="img/rupesh.png" alt="Dr. Rupesh">
+        <h3>Dr. Rupesh G Wandhare</h3>
+        <p>Associate Professor, Department of EE<br>IIT Hyderabad</p>
+        <p>Expert in power electronics and embedded control systems. His research interests are in Power 
+            Electronics, Electric Drives, EV Chargers, Renewable Energy Sources,Distributed Energy Generation, 
+            Standalone and Hybrid Energy Generation, Microgrid. Currently, his focus is in designing of 
+            power conditioning units, control and protection design, embedded systems and IoT for the 
+            distributed generation system, microgrid and EV Charging infrastructure. </p>
+        <p><strong>Email:</strong> rupesh@ee.iith.ac.in</p>
+        </div>
+
+        <!-- <div class="instructor-card">
+        <img src="instructor2.jpg" alt="Dr. B">
+        <h3>Dr. B</h3>
+        <p>Associate Professor, Department of EE<br>IIT Madras</p>
+        <p>Focuses on control theory and circuit reliability.</p>
+        </div> -->
+
+    </div>
+
+    <h2>Distinguished Guest Lecturers</h2>
+
+    <div class="instructors-grid">
+
+        <div class="instructor-card">
+        <img src="img/Sanjib_sir.jpg" alt="Dr. Sanjib Kumar Panda">
+        <h3>Prof. Sanjib Kumar Panda</h3>
+        <p>Professor, Department of Electrical & Computer Engineering 
+            <br>National University of Singapore</p>
+        <p>Focuses on extensive research in various areas of control of electric drives and power 
+            electronic converters. He has co-authored 1 book and published more than 175 papers in 
+            international refereed journals and conferences. His current research interests are in 
+            energy harvesting both at high power level as well as at very low-power level for wireless 
+            sensor nodes and networks, control of distributed renewable energy generation, assistive 
+            technology and mechatronics.</p>
+        </div>
+
+        <!-- <div class="instructor-card">
+        <img src="instructor2.jpg" alt="Dr. B">
+        <h3>Dr. B</h3>
+        <p>Associate Professor, Department of EE<br>IIT Madras</p>
+        <p>Focuses on control theory and circuit reliability.</p>
+        </div> -->
+
+        <!-- Add more cards as needed -->
+    </div>
+
+    <h2>WIE Chair & Instructors</h2>
+
+    <div class="instructors-grid">
+
+        <div class="instructor-card">
+        <img src="img/sreeLakshmi.png" alt="Dr. Shreelakshmi M. P">
+        <h3>Prof. Shreelakshmi M. P</h3>
+        <p>Assistant Professor, Department of Electrical Engineering 
+            <br>National Institute of Technology Calicut</p>
+        <p>Focuses on extensive research in various areas of control of electric drives and power 
+            electronic converters.</p>
+        </div>
+
+        <!-- <div class="instructor-card">
+        <img src="instructor2.jpg" alt="Dr. B">
+        <h3>Dr. B</h3>
+        <p>Associate Professor, Department of EE<br>IIT Madras</p>
+        <p>Focuses on control theory and circuit reliability.</p>
+        </div> -->
+
+        <!-- Add more cards as needed -->
+    </div>
+
+    </section>
+
+    <section id="registration" class="section">
+    <h2>Registration</h2>
+    
+    <p>All interested candidates are required to fill out the application form available after pressing "Registration link" button below. </p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSczhnoAVnijPHm5Z0jaBFqjJcivwqXP2uc7uhu2vJ7KbbqqFQ/viewform?usp=dialog" download class="download-btn" target="_blank">Registration Link</a>
+ <p>
+<ol>
+    <li>
+      <h3>Selection:</h3> After receiving applications, we will shortlist candidates based on the details filled up by them in the application form and based on first cum first-serve basis.
+    </li>
+
+    <li>
+      <h3>Registration:</h3> Selected candidates will have to complete final registration and payment by filling up a registration form which will be made available on the website after announcement of selected candidates, via email. 
+    </li>
+
+    
+
+    <!-- The fees to be paid for the shortlisted participants are as follows: -->
+
+    <div class="container">
+        <h2>Registration Fee Details</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Fee (INR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IEEE Student Members</td>
+                    <td>1500 + GST (18%)</td>
+                </tr>
+                <tr>
+                    <td>Non-IEEE Student Members</td>
+                    <td>1800 + GST (18%)</td>
+                </tr>
+                <tr>
+                    <td>Industry Professionals / Research & Teaching Staff / Faculty </td>
+                    <td>8000 + GST (18%)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Important Dates</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Deadline for submission of applications form</td>
+                    <td>June 23, 2025 (6 pm)  (first cum first-serve basis)</td>
+                </tr>
+                <tr>
+                    <td>Email notifications to the selected candidates</td>
+                    <td>June 15 to June 27, 2025 (6 pm)</td>
+                </tr>
+                <tr>
+                    <td>Deadline for submission of registration fee</td>
+                    <td>Within 2 days after receiving the email notification</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  </ol>
+
+      
+
+</p>
+    
+    
+    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9cZ2dH4t4iWyzbCJxn_Mw2AQelGLn7OxQz9TRxRsO0M-i3Q/viewform?usp=dialog" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+    <!-- <form class="registration-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf9cZ2dH4t4iWyzbCJxn_Mw2AQelGLn7OxQz9TRxRsO0M-i3Q/viewform?usp=dialog" method="POST" target="_blank">
+        <label for="entry.123456789">Full Name:</label>
+        <input type="text" name="entry.1848262404" required>
+
+        <label for="entry.1069173163">Email Address:</label>
+        <input type="email" name="entry.1069173163" required>
+
+        <label for="entry.1977462760">Affiliation/Institute:</label>
+        <input type="text" name="entry.1977462760" required>
+
+        <label for="entry.2028422076">Any Comments (Optional):</label>
+        <textarea name="entry.2028422076"></textarea>
+
+        <button type="submit">Submit Registration</button>
+    </form> -->
+    </section>
+
+
+    <section id="faq" class="section">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+        <button class="accordion-toggle">Who can attend this workshop?</button>
+        <div class="accordion-content">
+            <p>PhD scholars, postdoctoral students, and early-career researchers in Power Electronics Domain.</p>
+        </div>
+        </div>
+        <!-- <div class="accordion-item">
+        <button class="accordion-toggle">Is there any registration fee?</button>
+        <div class="accordion-content">
+            <p>Details regarding fees will be updated shortly.</p>
+        </div>
+        </div> -->
+
+        <div class="accordion-item">
+        <button class="accordion-toggle">Will participation certificates be given?</button>
+        <div class="accordion-content">
+            <p>Yes, certificates will be provided to participants who attend all sessions.</p>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+        <button class="accordion-toggle">Will participants have meals during workhop?</button>
+        <div class="accordion-content">
+            <p>Yes, the registration fee includes only lunch, tea/coffee/snacks breaks and a special dinner, during July 19 -23, 2025 . </p>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+        <button class="accordion-toggle">Will participants have accomodation during workhop?</button>
+        <div class="accordion-content">
+            <p>Accommodation for the participants will be arranged in the hostels of IITH with free of cost. </p>
+        </div>
+        </div>
+
+
+    </div>
+    </section>
+
+
+  </main>
+
+  <!-- SPONSORS -->
+  <section id="sponsor" class="sponsors">
+    <h2>In Collaboration With</h2>
+    <div class="sponsor-logos">
+      <img src="https://via.placeholder.com/100x50" alt="Sponsor 1">
+      <img src="https://via.placeholder.com/100x50" alt="Sponsor 2">
+      <img src="https://via.placeholder.com/100x50" alt="Sponsor 3">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer class="contact">
+    <h3>Contact</h3>
+    <p><i class="fas fa-user"></i> Mr. Praveen</p>
+    <p><i class="fas fa-envelope"></i> ee22resch11014@iith.ac.in</p>
+    <!-- <p><i class="fas fa-phone"></i> +91 91820 56568</p> -->
+  </footer>
+
+    <script>
+    document.querySelectorAll('.accordion-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        item.classList.toggle('active');
+        });
+    });
+    </script>
+
+    <script>
+        const countdownDate = new Date("July 19, 2025 09:00:00").getTime();
+        const timerEl = document.getElementById("timer");
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const diff = countdownDate - now;
+
+            if (diff <= 0) {
+            timerEl.innerHTML = "The workshop has started!";
+            return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            timerEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }, 1000);
+    </script>
+
+    <script>
+          // Show button after scroll
+          const backToTopBtn = document.getElementById("backToTop");
+
+          window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+              backToTopBtn.style.display = "block";
+            } else {
+              backToTopBtn.style.display = "none";
+            }
+          };
+
+          // Scroll to top on click
+          backToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          };
+    </script>
+
+    <script>
+      // Toggle the mobile menu
+      function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('show');
+      }
+
+      // Close the mobile menu when a link is clicked (on mobile only)
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          const menu = document.querySelector('.nav-links');
+          if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+          }
+        });
+      });
+    </script>
+
+
+
+
+</body>
+</html>
