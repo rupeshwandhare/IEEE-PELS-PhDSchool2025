@@ -491,14 +491,37 @@ body {
   justify-content: center;
 }
 
+
+/* .about-images img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: contain; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+} */
+
 .about-images img {
   width: 100%;
-  max-width: 300px;  /* Controls how big each image can be */
-  height: 200px;      /* Force same height */
-  object-fit: cover;  /* Crop and scale uniformly */
+  max-width: 800px;
+  height: auto;      
+  object-fit: contain;  
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+/* 
+.about-images img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+} */
+
+
+
 
 @media (max-width: 768px) {
   .about-images {
@@ -539,17 +562,31 @@ body {
 } */
 
 
+
+/* 
 .instructors-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* centers items horizontally */
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  justify-content: center;
   max-width: 1200px;
-  margin: auto;
+  margin: 2rem auto;
+  padding: 0 1rem;
+} */
+
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;      /* this is important */
+  align-items: start;
+  max-width: 1000px;            /* prevents too wide layouts */
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-.instructor-card {
+
+/* .instructor-card {
   background: white;
   padding: 1rem;
   border-radius: 10px;
@@ -557,31 +594,110 @@ body {
   transition: transform 0.3s;
   /* width: 45%; */
   /* max-width: 500px;*/
-  flex: 1 1 calc(70% - 2rem); /* 2 cards per row with gap */
-  max-width: calc(70% - 2rem);
+  /* flex: 1 1 calc(50% - 2rem); 2 cards per row with gap */
+  /* 
+  max-width: calc(50% - 2rem);
   box-sizing: border-box;
+  text-align: center;
+} */
+
+/* .instructor-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 300px;
+  margin: auto; 
+} */
+
+.instructor-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
 }
+
+
+
+/* .instructor-card:hover {
+  transform: translateY(-5px);
+} */
 
 .instructor-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+/* .instructor-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+} */
+
+/* .instructor-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+} */
 
 .instructor-card img {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
 }
 
-.instructor-card h3 {
+
+/* .instructor-card h3 {
   margin-top: 1rem;
   color: #004aad;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .instructor-card {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+} */
+
+.instructor-card h3 {
+  margin: 0.5rem 0;
+  color: #004aad;
+  font-size: 1.1rem;
+}
+
+.instructor-card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 900px) {
+  .instructors-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .instructors-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
   }
 }
 
