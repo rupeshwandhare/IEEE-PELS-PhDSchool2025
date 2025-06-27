@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> -->
   <style> html { scroll-behavior: smooth;} </style>
 </head>
 <body>
@@ -541,6 +543,18 @@
   </div>
   </footer>
 
+<!-- 
+
+  <div class="popup-overlay" id="popup">
+    <div class="popup-box">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h3>Workshop Registration Status</h3>
+      <canvas id="seatsChart" width="200" height="200"></canvas>
+      <p><strong>Hurry!</strong> Most of the seats are filled. Register and complete payment soon.</p>
+      <a href="#registration" class="register-btn" onclick="closePopup()">Register Now</a>
+    </div>
+  </div> -->
+
 
     <script>
     document.querySelectorAll('.accordion-toggle').forEach(btn => {
@@ -608,6 +622,42 @@
       });
     </script>
 
+<!-- 
+  <script>
+
+    window.onload = function () {
+      const popup = document.getElementById("popup");
+      popup.style.display = "flex";
+
+      const ctx = document.getElementById('seatsChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Filled', 'Available'],
+          datasets: [{
+            label: 'Seat Status',
+            data: [75, 25], // example: 75% filled
+            backgroundColor: ['#d32f2f', '#ccc'],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          cutout: '65%',
+          plugins: {
+            legend: {
+              display: true,
+              position: 'bottom'
+            }
+          }
+        }
+        // plugins: [ChartDataLabels]
+      });
+    };
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script> -->
 
 
 
